@@ -10,10 +10,12 @@
   margin: 0;
   padding: 0;
 }
+
 body {
   margin: 0;
   font-family: "Poppins", serif;
 }
+
 .btn {
   padding: 16px 32px;
   border-radius: 24px;
@@ -42,6 +44,7 @@ body {
 .wrapper {
   max-width: 1134px;
   margin: 0 auto;
+  padding: 0 60px;
 }
 
 header {
@@ -52,14 +55,13 @@ nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  position: fixed;
-  width: 1134px;
-  top: 42px;
+  padding-top: 42px;
   z-index: 100;
 
   height: 59px;
   flex-shrink: 0;
 }
+
 .logo {
   font-family: "Raleway", sans-serif;
   font-weight: 900;
@@ -87,10 +89,13 @@ nav ul li a {
   /* align-items: center; */
   justify-content: space-between;
   padding-top: 186px;
+  overflow: hidden;
 }
-.hero-section .left {
-  flex: 1;
+
+.left {
+  flex: 50%;
 }
+
 .hero-section .left h1 {
   font-family: "Raleway", sans-serif;
   font-weight: 900;
@@ -101,6 +106,7 @@ nav ul li a {
   max-width: 457px;
   padding-top: 33px;
 }
+
 .hero-section .left p {
   font-family: "Poppins", sans-serif;
   font-weight: normal;
@@ -115,6 +121,7 @@ nav ul li a {
 .hero-section .right {
   align-self: flex-end;
 }
+
 .hero-section .right .hero-image {
   transform: translateX(37px);
   max-width: 100%;
@@ -122,8 +129,7 @@ nav ul li a {
   vertical-align: middle;
 }
 
-.achievement-cards {
-}
+
 
 .achievement-card {
   position: absolute;
@@ -142,6 +148,7 @@ nav ul li a {
   top: 323px;
   text-align: center;
 }
+
 .achievement-card h3 {
   font-family: "Poppins", sans-serif;
   font-weight: bold;
@@ -149,12 +156,14 @@ nav ul li a {
 
   color: var(--dark-blue-color);
 }
+
 .achievement-card p {
   font-family: "Poppins", sans-serif;
   font-weight: 400;
   font-size: 16px;
   color: var(--dark-blue-color);
 }
+
 .achievement-card .bg {
   width: 100%;
   height: 100%;
@@ -165,6 +174,7 @@ nav ul li a {
   position: absolute;
   z-index: 1;
 }
+
 .achievement-card .content div {
   display: flex;
   text-align: center;
@@ -181,18 +191,18 @@ nav ul li a {
 .row {
   display: flex;
   justify-content: space-between;
-  gap: 102px;
+  gap: 103px;
   align-items: center;
 }
 
 .testimonial-card {
-  /* max-width: 550px; */
+  max-width: 442px;
   border-radius: 24px;
   background: #fff;
   box-shadow: 0px 9px 36px 0px rgba(0, 0, 0, 0.2);
 }
 
-.testimonial-card .content > p {
+.testimonial-card .content>p {
   color: #fff;
   font-family: "Raleway", sans-serif;
   font-size: 18px;
@@ -203,6 +213,7 @@ nav ul li a {
   padding: 24px 32px;
   background: var(--light-blue-color);
 }
+
 .testimonial-card .content .info {
   display: flex;
   padding: 0px 32px;
@@ -215,28 +226,48 @@ nav ul li a {
   font-family: "Raleway", sans-serif;
   font-size: 24px;
   font-weight: 900;
-  line-height: 120%; 
+  line-height: 120%;
+  white-space: nowrap;
 }
 
-.testimonial-card .content .info .name > p {
+.testimonial-card .content .info .name>p {
   color: #023047;
   font-family: "Raleway", sans-serif;
   font-size: 18px;
   font-weight: 400;
-  line-height: 120%; /* 21.6px */
+  line-height: 120%;
+
+}
+
+.testimonial-card .content .info .image {
+  height: 120px;
+
+}
+
+.testimonial-card .content .info .image img {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  margin-top: -24px;
+
 }
 
 .testimonials-section {
   padding: 100px 0;
 }
+
 .testimonials-section .right h2 {
   color: var(--dark-blue-color);
   font-family: "Raleway", sans-serif;
   font-size: 60px;
   font-style: normal;
   font-weight: 900;
-  line-height: 120%; /* 72px */
-  /* max-width: 559px; */
+  line-height: 120%;
+
+}
+
+.testimonials-section .right {
+  max-width: 559px;
 }
 
 .testimonials-section .right p {
@@ -247,6 +278,196 @@ nav ul li a {
   margin-bottom: 30px;
   font-style: normal;
   font-weight: 400;
-  line-height: 200%; /* 32px */
-  /* max-width: 558px; */
+  line-height: 200%;
+
+}
+
+.testimonial-cards {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 50px;
+  position: absolute;
+  top: 35px;
+
+}
+
+.testimonials-section .wrapper .row .left {
+  position: relative;
+}
+
+.jacob-jones {
+  transform: translateX(32px);
+}
+
+.jacob-jones .content>p {
+  background-color: var(--orange-color);
+}
+
+.rectangle {
+  width: 28px;
+  height: 546px;
+  flex-shrink: 0;
+  border-radius: 24px;
+  background: #023047;
+  margin-left: 87px;
+}
+
+.courses {
+  padding: 70px 0;
+  background: linear-gradient(180deg, #6F7DFB 0%, #26308C 100%);
+  text-align: center;
+}
+
+.courses h1 {
+  color: #FFF;
+  text-align: center;
+  font-family: "Raleway", sans-serif;
+  font-size: 60px;
+
+  font-weight: 900;
+  line-height: 120%;
+
+}
+
+.course-cards {
+  margin-top: 56px;
+
+  display: flex;
+  gap: 80px;
+  /* flex-wrap: wrap;
+  justify-content: center; */
+}
+
+.course-card {
+  padding: 0px 32px;
+  border-radius: 24px;
+  background: #FFF;
+  text-align: center;
+  max-width: 462px;
+  flex: 1;
+
+}
+
+
+.course-card .course-image {
+  border-radius: 24px;
+  height: 260px;
+  max-width: 100%;
+  box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.25);
+}
+
+.course-card .title-duration {
+  display: flex;
+  justify-content: space-between;
+
+  padding: 30px 0;
+}
+
+.course-card .title-duration .title {
+  text-align: left;
+  color: var(--dark-blue-color);
+  font-family: "Raleway", sans-serif;
+  font-size: 30px;
+  font-weight: 900;
+  line-height: 150%;
+  /* 45px */
+}
+
+.course-card .title-duration .duration p {
+
+  color: var(--dark-blue-color);
+  font-family: "Raleway", sans-serif;
+  font-size: 16px;
+  font-weight: 900;
+  line-height: 150%;
+  /* 24px */
+}
+
+.course-card .title-duration .duration {
+  display: flex;
+  white-space: nowrap;
+  gap: 8px;
+  align-self: center;
+}
+
+.course-card .title-duration .duration img {
+  width: 20px;
+  height: 20px;
+}
+
+.courses-btn {
+  display: flex;
+  justify-content: flex-end;
+  padding-top: 40px;
+}
+
+.courses-btn a {
+  position: relative;
+  right: 0px;
+}
+
+.app-section {
+  padding: 100px 0;
+}
+
+.app-wrapper {
+  max-width: 1070;
+  text-align: center;
+}
+
+.app-wrapper h1 {
+  color: var(--dark-blue-color);
+
+  font-family: "Raleway", sans-serif;
+  font-size: 60px;
+
+  font-weight: 900;
+  line-height: 120%;
+  /* 72px */
+}
+
+.app-wrapper p {
+  color: var(--dark-blue-color);
+  padding-top: 13px;
+  padding-bottom: 45px;
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 200%;
+}
+
+.app-btn {
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  align-items: center;
+  gap: 30px;
+}
+
+.app-btn a {
+  background: #000;
+  text-decoration: none;
+
+  padding: 20px 31px;
+
+  width: 248px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 14px;
+  color: #FFF;
+  text-align: center;
+  font-family: "Poppins", sans-serif;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 200%;
+  /* 48px */
+}
+
+
+footer{
+  padding: 70px 0;
 }
