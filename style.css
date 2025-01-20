@@ -1,0 +1,252 @@
+:root {
+  --orange-color: #da722c;
+  --dark-blue-color: #023047;
+  --dark-color: #070917;
+  --light-color: #e8f7fb;
+  --light-blue-color: #6f7dfb;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  margin: 0;
+  font-family: "Poppins", serif;
+}
+.btn {
+  padding: 16px 32px;
+  border-radius: 24px;
+  color: #fff;
+  display: inline-block;
+  font-weight: bold;
+  font-size: 18px;
+  text-decoration: none;
+  position: relative;
+}
+
+.btn.dark {
+  background: var(--dark-blue-color);
+}
+
+.btn.light {
+  background: var(--orange-color);
+}
+
+.btn.enrol-icon::before {
+  content: url("./assests/PencilAlt.svg");
+
+  padding-right: 10px;
+}
+
+.wrapper {
+  max-width: 1134px;
+  margin: 0 auto;
+}
+
+header {
+  background: linear-gradient(180deg, #6f7dfb 0%, #26308c 100%);
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  width: 1134px;
+  top: 42px;
+  z-index: 100;
+
+  height: 59px;
+  flex-shrink: 0;
+}
+.logo {
+  font-family: "Raleway", sans-serif;
+  font-weight: 900;
+  font-size: 40px;
+  color: #ffffff;
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+  gap: 60px;
+  align-items: center;
+}
+
+nav ul li a {
+  text-decoration: none;
+  font-family: "Poppins", sans-serif;
+  font-weight: bold;
+  font-size: 16px;
+  color: #ffffff;
+}
+
+.hero-section {
+  display: flex;
+  /* align-items: center; */
+  justify-content: space-between;
+  padding-top: 186px;
+}
+.hero-section .left {
+  flex: 1;
+}
+.hero-section .left h1 {
+  font-family: "Raleway", sans-serif;
+  font-weight: 900;
+  font-size: 50px;
+  line-height: 125%;
+  color: #ffffff;
+  margin-bottom: 0;
+  max-width: 457px;
+  padding-top: 33px;
+}
+.hero-section .left p {
+  font-family: "Poppins", sans-serif;
+  font-weight: normal;
+  font-size: 16px;
+  color: #ffffff;
+  line-height: 200%;
+  margin-top: 18px;
+  margin-bottom: 30px;
+  max-width: 457px;
+}
+
+.hero-section .right {
+  align-self: flex-end;
+}
+.hero-section .right .hero-image {
+  transform: translateX(37px);
+  max-width: 100%;
+  height: auto;
+  vertical-align: middle;
+}
+
+.achievement-cards {
+}
+
+.achievement-card {
+  position: absolute;
+}
+
+.achievement-card .content {
+  border-radius: 24px;
+  background: #fff;
+  padding: 8px 32px;
+  z-index: 10;
+  position: relative;
+}
+
+.achievement-card.students-enrolled {
+  left: 46%;
+  top: 323px;
+  text-align: center;
+}
+.achievement-card h3 {
+  font-family: "Poppins", sans-serif;
+  font-weight: bold;
+  font-size: 36px;
+
+  color: var(--dark-blue-color);
+}
+.achievement-card p {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  color: var(--dark-blue-color);
+}
+.achievement-card .bg {
+  width: 100%;
+  height: 100%;
+  top: 8px;
+  left: 8px;
+  border-radius: 24px;
+  background: linear-gradient(180deg, #6f7dfb 0%, #3b448f 100%);
+  position: absolute;
+  z-index: 1;
+}
+.achievement-card .content div {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+.achievement-card.overall-rating {
+  left: 43%;
+  top: 562px;
+  text-align: center;
+}
+
+.row {
+  display: flex;
+  justify-content: space-between;
+  gap: 102px;
+  align-items: center;
+}
+
+.testimonial-card {
+  /* max-width: 550px; */
+  border-radius: 24px;
+  background: #fff;
+  box-shadow: 0px 9px 36px 0px rgba(0, 0, 0, 0.2);
+}
+
+.testimonial-card .content > p {
+  color: #fff;
+  font-family: "Raleway", sans-serif;
+  font-size: 18px;
+
+  font-weight: 900;
+  line-height: 150%;
+  border-radius: 24px;
+  padding: 24px 32px;
+  background: var(--light-blue-color);
+}
+.testimonial-card .content .info {
+  display: flex;
+  padding: 0px 32px;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.testimonial-card .content .info .name h4 {
+  color: #023047;
+  font-family: "Raleway", sans-serif;
+  font-size: 24px;
+  font-weight: 900;
+  line-height: 120%; 
+}
+
+.testimonial-card .content .info .name > p {
+  color: #023047;
+  font-family: "Raleway", sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 120%; /* 21.6px */
+}
+
+.testimonials-section {
+  padding: 100px 0;
+}
+.testimonials-section .right h2 {
+  color: var(--dark-blue-color);
+  font-family: "Raleway", sans-serif;
+  font-size: 60px;
+  font-style: normal;
+  font-weight: 900;
+  line-height: 120%; /* 72px */
+  /* max-width: 559px; */
+}
+
+.testimonials-section .right p {
+  color: var(--dark-blue-color);
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+  margin-top: 16px;
+  margin-bottom: 30px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 200%; /* 32px */
+  /* max-width: 558px; */
+}
