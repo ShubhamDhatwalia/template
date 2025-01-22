@@ -16,6 +16,7 @@ body {
   font-family: "Poppins", serif;
 }
 
+
 .btn {
   padding: 16px 32px;
   border-radius: 24px;
@@ -48,9 +49,19 @@ body {
 
 }
 
-header {
-  /* background: linear-gradient(180deg, #6f7dfb 0%, #26308c 100%); */
-
+h1{
+  font-family: "Raleway", sans-serif;
+  font-weight: 900;
+  font-size: 50px;
+  line-height: 125%;
+  color: #ffffff;
+}
+h2{
+  font-family: "Raleway", sans-serif;
+  font-size: 60px;
+  font-style: normal;
+  font-weight: 900;
+  line-height: 120%;
 }
 
 .header-herosection {
@@ -107,13 +118,8 @@ nav ul li a {
   flex: 0 0 40%;
 }
 
-.hero-section .left h1 {
-  font-family: "Raleway", sans-serif;
-  font-weight: 900;
-  font-size: 50px;
-  line-height: 125%;
-  color: #ffffff;
-  margin-bottom: 0;
+.hero-section .left {
+  
   width: 457px;
   padding-top: 33px;
 }
@@ -273,13 +279,9 @@ nav ul li a {
   padding: 100px 0;
 }
 
-.testimonials-section .right h2 {
+.testimonials-section .right {
   color: var(--dark-blue-color);
-  font-family: "Raleway", sans-serif;
-  font-size: 60px;
-  font-style: normal;
-  font-weight: 900;
-  line-height: 120%;
+  
 
 }
 
@@ -339,15 +341,9 @@ nav ul li a {
   text-align: center;
 }
 
-.courses h1 {
+.courses h2 {
   color: #FFF;
-  text-align: center;
-  font-family: "Raleway", sans-serif;
-  font-size: 60px;
-
-  font-weight: 900;
-  line-height: 120%;
-
+  
 }
 
 .course-cards {
