@@ -45,9 +45,15 @@ body {
   max-width: 1134px;
   margin: 0 auto;
   padding: 0 30px;
+
 }
 
 header {
+  /* background: linear-gradient(180deg, #6f7dfb 0%, #26308c 100%); */
+
+}
+
+.header-herosection {
   background: linear-gradient(180deg, #6f7dfb 0%, #26308c 100%);
   overflow: hidden;
 }
@@ -59,9 +65,8 @@ nav {
   padding-top: 42px;
   z-index: 100;
   height: 59px;
-  position: fixed;
-  width: 100%;
-  
+  top: 0;
+
 }
 
 .logo {
@@ -87,11 +92,15 @@ nav ul li a {
 }
 
 .hero-section {
-  display: flex;
-  /* align-items: center; */
-  justify-content: space-between;
-  padding-top: 186px;
 
+  padding-top: 186px;
+  /* background: linear-gradient(180deg, #6f7dfb 0%, #26308c 100%); */
+}
+
+.hero-section .wrapper .row {
+  display: flex;
+  gap: 100px;
+  justify-content: space-between;
 }
 
 .left {
@@ -105,7 +114,7 @@ nav ul li a {
   line-height: 125%;
   color: #ffffff;
   margin-bottom: 0;
-  max-width: 457px;
+  width: 457px;
   padding-top: 33px;
 }
 
@@ -122,21 +131,19 @@ nav ul li a {
 
 .hero-section .right {
   align-self: flex-end;
+  position: relative;
+  /* width: 100%;
+  text-align: end; */
 }
 
-.hero-section .right .hero-image-container {
-  max-width: 446px;
-  height: 582px;
-  flex-shrink: 0;
-}
+
 
 .hero-section .right .hero-image {
   transform: translateX(37px);
-  max-width: 100%;
+  /* max-width: 100%; */
   height: auto;
   vertical-align: middle;
 }
-
 
 
 .achievement-card {
@@ -152,8 +159,8 @@ nav ul li a {
 }
 
 .achievement-card.students-enrolled {
-  left: 46%;
-  top: 323px;
+  left: -35%;
+  top: 137px;
   text-align: center;
 }
 
@@ -191,8 +198,8 @@ nav ul li a {
 }
 
 .achievement-card.overall-rating {
-  left: 43%;
-  top: 562px;
+  left: -45%;
+  top: 376px;
   text-align: center;
 }
 
@@ -477,7 +484,7 @@ nav ul li a {
   font-size: 24px;
   font-weight: 400;
   line-height: 200%;
-  /* 48px */
+
 }
 
 
@@ -488,7 +495,6 @@ footer {
 
 footer .row {
   display: flex;
-  /* flex-wrap: wrap; */
   gap: 45px;
   justify-content: space-between;
 }
@@ -499,7 +505,6 @@ footer .row {
   font-size: 18px;
   font-weight: 700;
   line-height: 200%;
-  /* 36px */
 }
 
 .quick-links .links {
@@ -516,11 +521,11 @@ footer .row {
   font-weight: 400;
   line-height: 200%;
   padding-top: 9px;
-  /* 32px */
 }
 
 .links a img {
   padding: 9px 0;
+  padding-right: 28px;
 }
 
 form input {
@@ -537,7 +542,7 @@ form input {
 
   font-weight: 400;
   line-height: 200%;
-  /* 32px */
+
 }
 
 form {
@@ -561,7 +566,7 @@ form button {
   font-size: 16px;
   font-weight: 400;
   line-height: 200%;
-  /* 32px */
+
 }
 
 .contact-row {
@@ -575,7 +580,7 @@ footer .wrapper p {
   margin-top: 32px;
   font-weight: 400;
   line-height: 200%;
-  /* 32px */
+
 }
 
 form button:hover {
@@ -584,9 +589,10 @@ form button:hover {
 
 @media screen and (max-width: 834px) {
 
-  .wrapper{
+  .wrapper {
     padding: 0 60px;
   }
+
   .testimonials-section .row {
     flex-direction: column;
   }
@@ -606,82 +612,121 @@ form button:hover {
   .testimonials-section .left .testimonial-card {
     max-width: 634px;
   }
-  .testimonials-section .right h2,  .courses h1, .app-wrapper h1 {
+
+  .testimonials-section .right h2,
+  .courses h1,
+  .app-wrapper h1 {
     font-size: 40px;
   }
-  .rectangle{
+
+  .rectangle {
     height: 500px;
   }
-  .testimonial-cards{
+
+  .testimonial-cards {
     gap: 40px;
   }
 
-  nav ul{
+  nav ul {
     gap: 42px;
   }
 
-  footer .row{
+  footer .row {
     flex-wrap: wrap;
     justify-content: flex-start;
   }
-  footer .contact-row{
+
+  footer .contact-row {
     flex: 0 0 100%;
   }
 }
 
+/* @media screen and (max-width: 1024px) {
 
+  .achievement-card.overall-rating{
+    top: 979px;
+    left: 17%;
+  }
+
+  .achievement-card.students-enrolled{
+    top: 763px;
+    left: 20%;
+  }
+  .hero-section .left p{
+    max-width: 100%;
+  }
+  .hero-section .row{
+    flex-wrap: wrap;
+  }
+  .left{
+    flex: 0 0 100%;
+  }
+  .hero-section .right img{
+    margin-top: -40px;
+  }
+  .hero-section .right {
+    flex: 0 0 100%;
+    text-align: end;
+    
+  }
+} */
 
 @media screen and (max-width:480px) {
 
-  .achievement-card h3{
+  .achievement-card h3 {
     font-size: 30px;
   }
 
-  .hero-section .left h1{
+  .hero-section .left h1 {
     font-size: 36px;
   }
 
-  .testimonials-section .right h2,  .courses h1, .app-wrapper h1 {
+  .testimonials-section .right h2,
+  .courses h1,
+  .app-wrapper h1 {
     font-size: 30px;
   }
 
-  .course-card .title-duration .title{
+  .course-card .title-duration .title {
     font-size: 24px;
   }
 
-  .testimonial-card .content .info .name h4{
+  .testimonial-card .content .info .name h4 {
     font-size: 18px;
   }
 
-  .testimonial-card .content .info .image img{
+  .testimonial-card .content .info .image img {
     width: 100px;
     height: 100px;
   }
 
-  .testimonial-card .content .info .image{
+  .testimonial-card .content .info .image {
     height: 100px;
   }
 
-  .rectangle{
+  .rectangle {
     height: 484px;
   }
-  .testimonial-cards{
+
+  .testimonial-cards {
     gap: 36px;
   }
 
-  .app-btn a{
+  .app-btn a {
     padding: 12px 31px;
   }
-  footer .row{
+
+  footer .row {
     justify-content: center;
     text-align: center;
     flex-direction: column;
   }
 
-  footer form{
+  footer form {
     position: static;
   }
-  footer form button{
+
+  footer form button {
     position: static;
     transform: none;
     margin-top: 15px;
